@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,
+                 maximum-scale=1.0, user-scalable=no">
+
+  <meta name="theme-color" content="#070b12">
+
+  <title>Aviator Lab</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- HEADER -->
+    <header class="topbar">
+      <div>
+        <div class="logo">✈️ AVIATOR LAB</div>
+        <div class="subtitle">Educational Simulator</div>
+      </div>
+
+      <div class="connection">
+        <span class="dot"></span>
+        <span>DEMO</span>
+      </div>
+    </header>
+
+
+    <!-- WARNING -->
+    <div class="notice">
+      ⚠️ Educational simulation — no real-money predictions.
+    </div>
+
+
+    <!-- MAIN DISPLAY -->
+    <section class="game-card">
+
+      <div class="round-label">
+        ROUND <span id="roundNumber">1001</span>
+      </div>
+
+      <div class="multiplier" id="multiplier">
+        1.00x
+      </div>
+
+      <div class="status" id="status">
+        WAITING FOR ROUND
+      </div>
+
+      <div class="plane">
+        ✈️
+      </div>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+    </section>
+
+
+    <!-- PREDICTION -->
+    <section class="prediction-card">
+
+      <div class="section-title">
+        NEXT ROUND ANALYSIS
+      </div>
+
+      <div class="prediction-value" id="prediction">
+        Calculating...
+      </div>
+
+      <div class="confidence-container">
+
+        <div class="confidence-label">
+          <span>Confidence</span>
+          <span id="confidence">0%</span>
+        </div>
+
+        <div class="confidence-bar">
+          <div id="confidenceFill"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- RECENT ROUNDS -->
+    <section class="history-card">
+
+      <div class="section-title">
+        RECENT SIMULATED ROUNDS
+      </div>
+
+      <div id="history" class="history">
+        <!-- rounds appear here -->
+      </div>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+    <section class="stats">
+
+      <div class="stat">
+        <span>Total Rounds</span>
+        <strong id="totalRounds">0</strong>
+      </div>
+
+      <div class="stat">
+        <span>Average</span>
+        <strong id="average">0.00x</strong>
+      </div>
+
+      <div class="stat">
+        <span>Highest</span>
+        <strong id="highest">0.00x</strong>
+      </div>
+
+    </section>
+
+
+    <!-- BUTTONS -->
+    <div class="controls">
+
+      <button id="startBtn">
+        ▶ START SIMULATION
+      </button>
+
+      <button id="resetBtn" class="secondary">
+        ↻ RESET
+      </button>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+      AVIATOR LAB • FOR EDUCATIONAL USE ONLY
+    </footer>
+
+  </div>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
